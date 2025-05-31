@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Підключення FontAwesome для використання текстових іконок -->
+   
+<div class="container">
+    <h1>Прогноз погоди</h1>
+    <div class="position">
+    <select id="citySelect">
+       <option value="Kyiv">Київ</option>
+       <option value="Lviv">Львів</option>
+       <option value="Kharkiv">Харків</option>       
+       <option value="Izmail">Ізмаїл</option>
+
+    </select>
+      <input type="text" id="searchInput" placeholder="Введіть місце...">
+      <button onclick="getWeather()">Пошук</button>
+</div>
+      <div id="weather" class="weather-box"></div>
+      <div id="forecast"></div>
+  </div>   
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Підключення локального скрипта -->
+    <script src="script.js">defer</script>
+
+  </body>
+</html>
